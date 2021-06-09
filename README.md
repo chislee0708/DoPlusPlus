@@ -1,2 +1,2 @@
 # DoPlusPlus
-A Python Flask web application that displays a list of to-do items added by user. 
+A Python Flask web application that requires authentication and displays a list of to-do items added by the user. 
