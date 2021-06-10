@@ -40,6 +40,11 @@ def signUp():
         first_name = request.form.get('firstName')
         password1 = request.form.get('password1')
         password2 = request.form.get('password2')
+        invCode = request.form.get('invitationCode')
+        
+        if(invCode != 'Doplusplus'):
+            flash('Invalid Invitation code', category='error')            
+            return render_template('sign_up.html', user=current_user)
         
         user = User.query.filter_by(email=email).first()
         if user:
