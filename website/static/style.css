@@ -76,10 +76,30 @@
   }
   
   .footer-basic .social > .ins:hover {
+    color: #80604D;
+    background-color: white;
+  }  
+  
+  .footer-basic .social > .uTube:hover {
     color: white;
     background-color: red;
   }
   
+  .footer-basic .social > .twitter:hover {
+    color: white;
+    background-color: #00acee;
+  } 
+
+  .footer-basic .social > .likIn:hover {
+    color: white;
+    background-color: #0e76a8;
+  }
+
+  .footer-basic .social > .git:hover {
+    color: black;
+    background-color: white;
+  }
+
   .footer-basic .copyright {
     margin-top:15px;
     text-align:center;
