@@ -43,7 +43,7 @@ def signUp():
         invCode = request.form.get('invitationCode')
         
         if(invCode != 'Doplusplus'):
-            flash('Invalid Invitation code', category='error')            
+            flash('Invalid Invitation code. Please check github for test account.', category='error')            
             return render_template('sign_up.html', user=current_user)
         
         user = User.query.filter_by(email=email).first()
